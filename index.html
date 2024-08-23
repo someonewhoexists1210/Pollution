@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GP Project</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+        <script src="https://kit.fontawesome.com/5e90111a89.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="load()">
+
+        <div class="w3-bar w3-black sticky">
+            <a href="#home" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i></a>
+            <a href="#problemlink" class="w3-bar-item w3-button">The problem</a>
+            <a href="#caseslink" class="w3-bar-item w3-button">Case Studies</a>
+            <a href="#solutions" class="w3-bar-item w3-button">What you can do</a>
+        </div>
+
+        <section class="w3-content w3-center w3-display-container" style="max-width:100%">
+            <div class="typing-container w3-display-middle">
+                <p id="typing-text"></p>
+            </div>
+            <div class="mySlides w3-display-container">
+                <img src="imgs/image1.jpg" alt="Slide 1">
+            </div>
+        
+            <div class="mySlides w3-display-container">
+                <img src="imgs/image2.jpg" alt="Slide 2">
+            </div>
+        </section>
+        <div id="problemlink"></div>
+        <br>
+
+        <section class="w3-container">
+            <div class="w3-container w3-bottombar" style="text-align: center;">
+                <h2><b><i>The Problem of Pollution</i></b></h2>
+                <p style="width: 92%;" id="problempara">Pollution, by definition, is “the presence or introduction into the environment of a 
+                substance that has harmful or poisonous effects”. There are 6 types of major harm-causing pollution which 
+                are:- <a id="air_link">air pollution</a>, <a id="water_link">water pollution</a>, <a id="air_link">land pollution</a>, <a id="air_link">light pollution</a>
+                <a id="air_link">noise pollution</a>, <a id="air_link">plastic pollution</a>, and <a id="air_link">thermal pollution</a>. 
+                There are countless issues because of these different types of pollution.</p>
+
+            </div>
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink">Air</button>
+                <button class="w3-bar-item w3-button tablink">Land</button>
+                <button class="w3-bar-item w3-button tablink">Water</button>
+                <button class="w3-bar-item w3-button tablink">Light</button>
+                <button class="w3-bar-item w3-button tablink">Noise</button>
+                <button class="w3-bar-item w3-button tablink">Plastic</button>
+                <button class="w3-bar-item w3-button tablink">Thermal</button>
+
+            </div>
+            <div>
+                <div id="Air" class="w3-container tab">
+                    <h2>Air Pollution</h2>
+                    <ul>
+                        <li>Exposure to air pollutant PM2.5 is related to a higher risk of death, hence mortality rates related to air pollution are a huge concern.</li>
+                        <li>The primary concern regarding air pollution was its impact on respiratory health.</li>
+                        <li>Air quality is linked to the earth's climate and ecosystems globally. </li>
+                        <li>Short-term effects, which are temporary, include illnesses such as pneumonia or bronchitis.</li>
+                        <li>They also include discomforts such as irritation to the nose, throat, eyes, or skin.</li>
+
+                    </ul>
+                </div>
+                <div id="Land" class="w3-container tab" style="display:none">
+                    <h2>Land Pollution</h2>
+                    <ul>
+                        <li>Agricultural pesticides and improper disposal of waste can lead to soil contamination and chemicals from industrial activities, affecting soil fertility.</li>
+                        <li>Exposure to contaminated soil and water leads to a variety of health problems, including respiratory issues, skin conditions, etc.</li>
+                        <li>Contaminants in soil could be absorbed easily by crops, leading to dangerous levels of toxins in our staple diet, posing a risk to food safety and our health.</li>
+                    </ul>
+                </div>
+                <div id="Water" class="w3-container tab" style="display:none">
+                    <h2>Water Pollution</h2>
+                    <ul>
+                        <li>Plastics from industrial waste disposals are thrown off into the rivers, lakes and oceans.This waste is then ingested by marine animals, causing harm to them by entering their food chains.</li>
+                        <li>Agricultural runoffs and improper disposal of household chemicals introduce many harmful substances like heavy metals into water bodies like rivers and oceans,these chemicals can cause serious health issues for humans and aquatic life.</li>
+                        <li>Water pollution is one of the many causes of thermal pollution, as the discharge of heated water, which runs off into the clean water bodies raises the temp. Of the water , disturbing the aquatic ecosystem too.</li>
+                    </ul>
+                </div>
+                <div id="Light" class="w3-container tab" style="display:none">
+                    <h2>Light Pollution</h2>
+                    <ul>
+                        <li>Light pollution changes the nighttime visibility of natural features and can cause people some really beautiful scenes.</li>
+                        <li> Light pollution also disorients migratory animals which could lead them to get lost.</li>
+                        <li>Light pollution fosters bird collisions with lighted towers and buildings which could physically hurt them and damage the buildings.</li>
+                    </ul>
+                </div>
+                <div id="Noise" class="w3-container tab" style="display:none">
+                    <h2>Noise Pollution</h2>
+                    <ul>
+                        <li>Very loud noises can lead to irreversible physical damage to the hearing organs in humans and other animals.</li>
+                        <li>Continuous loud and buzzing noises can produce increased stress levels.</li>
+                        <li>It also disrupts ecosystems by driving and misdirecting certain species away.</li>
+                        <li>Noise alters and changes the habits of wild creatures which could be very dangerous.</li>
+                    </ul>
+                </div>
+                <div id="Plastic" class="w3-container tab" style="display:none">
+                    <h2>Plastic Pollution</h2>
+                    <ul>
+                        <li>It takes thousands of years for plastic to completely biodegrade, causing landfills to be full with plastics for thousands of years</li>
+                        <li>The additives in plastic can become <i><u>endocrine disruptors.</u></i></li>
+                        <li>The plastic waste flows downstream into water bodies which could lead to the sea creatures choking up or being trapped in plastic.</li>
+                        <li>Plastic is also a source of <i><u>polychlorinated biphenyls</u></i> which are <i><u>suspected carcinogens</u></i>.</li>
+                    </ul>
+                </div>
+                <div id="Thermal" class="w3-container tab" style="display:none">
+                    <h2>Thermal Pollution</h2>
+                    <ul>
+                        <li>Thermal pollution disturbs aquatic life because higher temperatures reduce oxygen levels in water, therefore increasing their vulnerability to diseases.</li>
+                        <li>Thermal pollution also leads to ecosystem imbalance as the temperature changes can lead to a huge shift in species composition, potentially damaging the ecosystem a lot.</li>
+                        <li>In addition, sudden temperature changes, for example, the release of warm water, can cause thermal shock to aquatic organisms, leading them to die.</li>
+                        <li>The increased temperature leads to the faster depletion of dissolved oxygen and the increased release of toxins. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-bottombar" id="caseslink"></div>
+
+        </section>
+
+        <section class="w3-row-padding" id="cases">
+            <div class="w3-col s6 m6 l6">
+                <div class="w3-card-4 w3-margin">
+                    <header class="w3-container w3-blue-gray" style="text-align: center;">
+                        <h3>Mexico City</h3>
+                        <h6>One of the most polluted cities in the world</h6>
+                    </header>
+                    <div class="w3-container" style="text-align: center;">
+                        <p>(Small intro/overview)<br><br><br><br></p>
+                    
+                        <a 
+                            class="w3-btn w3-white w3-hover-red w3-border w3-border-grey w3-center" 
+                            href="mcase.html" 
+                            target="_blank"
+                        >Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col s6 m6 l6">
+                <div class="w3-card-4 w3-margin">
+                    <header class="w3-container w3-win8-emerald" style="text-align: center;">
+                        <h3>Zürich
+                        <h6>One of the most cleanest cities in the world</h6>
+                    </header>
+                    <div class="w3-container" style="text-align: center;">
+                        <p class="w3-center">(Small intro/overview)<br><br><br><br></p>
+                        <a 
+                            class="w3-btn w3-white w3-hover-light-green w3-border w3-border-grey w3-center" 
+                            href="zcase.html" 
+                            target="_blank"
+                        >Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w3-container" id="solutions">
+
+        </section>
+    </body>
+</html>
