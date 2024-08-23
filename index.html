@@ -7,36 +7,31 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
         <script src="https://kit.fontawesome.com/5e90111a89.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
     </head>
-    <body onload="load()">
+    <body onload="load()" >
+        <div id="navigation" class="sticky"></div>
 
-        <div class="w3-bar w3-black sticky">
-            <a href="#home" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i></a>
-            <a href="#problemlink" class="w3-bar-item w3-button">The problem</a>
-            <a href="#caseslink" class="w3-bar-item w3-button">Case Studies</a>
-            <a href="#solutions" class="w3-bar-item w3-button">What you can do</a>
-        </div>
-
-        <section class="w3-content w3-center w3-display-container" style="max-width:100%">
+        <section class="w3-content w3-center w3-display-container" style="max-width:100%" id="home">
             <div class="typing-container w3-display-middle">
                 <p id="typing-text"></p>
             </div>
             <div class="mySlides w3-display-container">
-                <img src="imgs/image1.jpg" alt="Slide 1">
+                <img src="images/home/image1.jpg" alt="Slide 1">
             </div>
         
             <div class="mySlides w3-display-container">
-                <img src="imgs/image2.jpg" alt="Slide 2">
+                <img src="images/home/image2.jpg" alt="Slide 2">
             </div>
             <div class="mySlides w3-display-container">
-                <img src="imgs/image4.jpg" alt="Slide 2">
+                <img src="images/home/image4.jpg" alt="Slide 2">
             </div>
         </section>
-        <div id="problemlink"></div>
         <br>
 
+
+        <div id="problemlink"></div>
         <section class="w3-container">
             <div class="w3-container w3-bottombar" style="text-align: center;">
                 <h2><b><i>The Problem of Pollution</i></b></h2>
@@ -49,8 +44,8 @@
             </div>
             <div class="w3-bar w3-black">
                 <button class="w3-bar-item w3-button w3-red tablink">Air</button>
-                <button class="w3-bar-item w3-button tablink">Water</button>
                 <button class="w3-bar-item w3-button tablink">Land</button>
+                <button class="w3-bar-item w3-button tablink">Water</button>
                 <button class="w3-bar-item w3-button tablink">Light</button>
                 <button class="w3-bar-item w3-button tablink">Noise</button>
                 <button class="w3-bar-item w3-button tablink">Plastic</button>
@@ -58,73 +53,122 @@
 
             </div>
             <div>
-                <div id="Air" class="w3-container tab">
+                <div id="Air" class="w3-row-padding tab">
                     <h2>Air Pollution</h2>
-                    <ul>
-                        <li>Exposure to air pollutant PM2.5 is related to a higher risk of death, hence mortality rates related to air pollution are a huge concern.</li>
-                        <li>The primary concern regarding air pollution was its impact on respiratory health.</li>
-                        <li>Air quality is linked to the earth's climate and ecosystems globally. </li>
-                        <li>Short-term effects, which are temporary, include illnesses such as pneumonia or bronchitis.</li>
-                        <li>They also include discomforts such as irritation to the nose, throat, eyes, or skin.</li>
-
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Exposure to air pollutant PM2.5 is related to a higher risk of death, hence mortality rates related to air pollution are a huge concern.</li>
+                            <li>The primary concern regarding air pollution was its impact on respiratory health.</li>
+                            <li>Air quality is linked to the earth's climate and ecosystems globally. </li>
+                            <li>Short-term effects, which are temporary, include illnesses such as pneumonia or bronchitis.</li>
+                            <li>They also include discomforts such as irritation to the nose, throat, eyes, or skin.</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/air.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%);">
+                        </div>
+                    </div>
                 </div>
-                <div id="Land" class="w3-container tab" style="display:none">
+                
+                
+                <div id="Land" class="w3-row tab" style="display:none">
                     <h2>Land Pollution</h2>
-                    <ul>
-                        <li>Agricultural pesticides and improper disposal of waste can lead to soil contamination and chemicals from industrial activities, affecting soil fertility.</li>
-                        <li>Exposure to contaminated soil and water leads to a variety of health problems, including respiratory issues, skin conditions, etc.</li>
-                        <li>Contaminants in soil could be absorbed easily by crops, leading to dangerous levels of toxins in our staple diet, posing a risk to food safety and our health.</li>
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Agricultural pesticides and improper disposal of waste can lead to soil contamination and chemicals from industrial activities, affecting soil fertility.</li>
+                            <li>Exposure to contaminated soil and water leads to a variety of health problems, including respiratory issues, skin conditions, etc.</li>
+                            <li>Contaminants in soil could be absorbed easily by crops, leading to dangerous levels of toxins in our staple diet, posing a risk to food safety and our health.</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/land.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
                 </div>
-                <div id="Water" class="w3-container tab" style="display:none">
+                <div id="Water" class="w3-row tab " style="display:none">
                     <h2>Water Pollution</h2>
-                    <ul>
-                        <li>Plastics from industrial waste disposals are thrown off into the rivers, lakes and oceans.This waste is then ingested by marine animals, causing harm to them by entering their food chains.</li>
-                        <li>Agricultural runoffs and improper disposal of household chemicals introduce many harmful substances like heavy metals into water bodies like rivers and oceans,these chemicals can cause serious health issues for humans and aquatic life.</li>
-                        <li>Water pollution is one of the many causes of thermal pollution, as the discharge of heated water, which runs off into the clean water bodies raises the temp. Of the water , disturbing the aquatic ecosystem too.</li>
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Plastics from industrial waste disposals are thrown off into the rivers, lakes and oceans.This waste is then ingested by marine animals, causing harm to them by entering their food chains.</li>
+                            <li>Agricultural runoffs and improper disposal of household chemicals introduce many harmful substances like heavy metals into water bodies like rivers and oceans,these chemicals can cause serious health issues for humans and aquatic life.</li>
+                            <li>Water pollution is one of the many causes of thermal pollution, as the discharge of heated water, which runs off into the clean water bodies raises the temp. Of the water , disturbing the aquatic ecosystem too.</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/water.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
                 </div>
-                <div id="Light" class="w3-container tab" style="display:none">
+                <div id="Light" class="w3-row tab" style="display:none">
                     <h2>Light Pollution</h2>
-                    <ul>
-                        <li>Light pollution changes the nighttime visibility of natural features and can cause people some really beautiful scenes.</li>
-                        <li> Light pollution also disorients migratory animals which could lead them to get lost.</li>
-                        <li>Light pollution fosters bird collisions with lighted towers and buildings which could physically hurt them and damage the buildings.</li>
-                    </ul>
-                </div>
-                <div id="Noise" class="w3-container tab" style="display:none">
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Light pollution changes the nighttime visibility of natural features and can cause people some really beautiful scenes.</li>
+                            <li> Light pollution also disorients migratory animals which could lead them to get lost.</li>
+                            <li>Light pollution fosters bird collisions with lighted towers and buildings which could physically hurt them and damage the buildings.</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/light.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
+                </div> 
+                <div id="Noise" class="w3-row tab" style="display:none">
                     <h2>Noise Pollution</h2>
-                    <ul>
-                        <li>Very loud noises can lead to irreversible physical damage to the hearing organs in humans and other animals.</li>
-                        <li>Continuous loud and buzzing noises can produce increased stress levels.</li>
-                        <li>It also disrupts ecosystems by driving and misdirecting certain species away.</li>
-                        <li>Noise alters and changes the habits of wild creatures which could be very dangerous.</li>
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Very loud noises can lead to irreversible physical damage to the hearing organs in humans and other animals.</li>
+                            <li>Continuous loud and buzzing noises can produce increased stress levels.</li>
+                            <li>It also disrupts ecosystems by driving and misdirecting certain species away.</li>
+                            <li>Noise alters and changes the habits of wild creatures which could be very dangerous.</li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/noise.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
                 </div>
-                <div id="Plastic" class="w3-container tab" style="display:none">
+                <div id="Plastic" class="w3-row tab" style="display:none">
                     <h2>Plastic Pollution</h2>
-                    <ul>
-                        <li>It takes thousands of years for plastic to completely biodegrade, causing landfills to be full with plastics for thousands of years</li>
-                        <li>The additives in plastic can become <a href="https://www.niehs.nih.gov/health/topics/agents/endocrine" target="_blank"><i><u>endocrine disruptors.</u></i></a></li>
-                        <li>The plastic waste flows downstream into water bodies which could lead to the sea creatures choking up or being trapped in plastic.</li>
-                        <li>Plastic is also a source of <a href="https://www.epa.gov/pcbs/learn-about-polychlorinated-biphenyls" target="_blank"><i><u>polychlorinated biphenyls</u></i></a> which are suspected <a href="https://www.britannica.com/science/carcinogen" target="_blank"><i><u>carcinogens</u></i></a></li>
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>It takes thousands of years for plastic to completely biodegrade, causing landfills to be full with plastics for thousands of years</li>
+                            <li>The additives in plastic can become <a href="https://www.niehs.nih.gov/health/topics/agents/endocrine" target="_blank"><i><u>endocrine disruptors.</u></i></a></li>
+                            <li>The plastic waste flows downstream into water bodies which could lead to the sea creatures choking up or being trapped in plastic.</li>
+                            <li>Plastic is also a source of <a href="https://www.epa.gov/pcbs/learn-about-polychlorinated-biphenyls" target="_blank"><i><u>polychlorinated biphenyls</u></i></a> which are suspected <a href="https://www.britannica.com/science/carcinogen" target="_blank"><i><u>carcinogens</u></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/plastic.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
                 </div>
-                <div id="Thermal" class="w3-container tab" style="display:none">
+                <div id="Thermal" class="w3-row tab" style="display:none">
                     <h2>Thermal Pollution</h2>
-                    <ul>
-                        <li>Thermal pollution disturbs aquatic life because higher temperatures reduce oxygen levels in water, therefore increasing their vulnerability to diseases.</li>
-                        <li>Thermal pollution also leads to ecosystem imbalance as the temperature changes can lead to a huge shift in species composition, potentially damaging the ecosystem a lot.</li>
-                        <li>In addition, sudden temperature changes, for example, the release of warm water, can cause thermal shock to aquatic organisms, leading them to die.</li>
-                        <li>The increased temperature leads to the faster depletion of dissolved oxygen and the increased release of toxins. </li>
-                    </ul>
+                    <div class="w3-col s6 m8 l7">
+                        <ul>
+                            <li>Thermal pollution disturbs aquatic life because higher temperatures reduce oxygen levels in water, therefore increasing their vulnerability to diseases.</li>
+                            <li>Thermal pollution also leads to ecosystem imbalance as the temperature changes can lead to a huge shift in species composition, potentially damaging the ecosystem a lot.</li>
+                            <li>In addition, sudden temperature changes, for example, the release of warm water, can cause thermal shock to aquatic organisms, leading them to die.</li>
+                            <li>The increased temperature leads to the faster depletion of dissolved oxygen and the increased release of toxins. </li>
+                        </ul>
+                    </div>
+                    <div class="w3-col s6 m4 l5 w3-center">
+                        <div class="w3-display-container w3-flex w3-center" >
+                            <img src="images/problem_imgs/thermal.jpeg" alt="Air Pollution" style="max-width: 100%; max-height: 100%; transform: translateY(-10%); object-fit: contain;">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="w3-bottombar" id="caseslink"></div>
-
         </section>
 
+        <div class="w3-bottombar" id="caseslink"></div>
         <section class="w3-row-padding" id="cases">
             <div class="w3-col s6 m6 l6">
                 <div class="w3-card-4 w3-margin">
@@ -137,7 +181,7 @@
                     
                         <a 
                             class="w3-btn w3-white w3-hover-red w3-border w3-border-grey w3-center" 
-                            href="mcase.html" 
+                            href="cases/mexico.html" 
                             target="_blank"
                         >Case Study</a>
                     </div>
@@ -154,7 +198,7 @@
                         <p class="w3-center">(Small intro/overview)<br><br><br><br></p>
                         <a 
                             class="w3-btn w3-white w3-hover-light-green w3-border w3-border-grey w3-center" 
-                            href="zcase.html" 
+                            href="cases/zurich.html" 
                             target="_blank"
                         >Case Study</a>
                     </div>
@@ -162,7 +206,7 @@
             </div>
         </section>
 
-        <div class="w3-content w3-display-container slideshow-container" style="margin-top:50px">
+        <div class="w3-content w3-display-container slideshow-container" id="solutions" style="margin-top:50px">
             <!-- Air Pollution Slide -->
             <div class="w3-display-container w3-card-4 cardslide">
                 <div class="w3-card">
