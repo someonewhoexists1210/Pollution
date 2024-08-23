@@ -1,0 +1,36 @@
+.mySlides {
+    display: none;
+}
+.w3-display-container img {
+    width: 100%;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.typing-container {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    z-index: 1;
+}
+
+#typing-text {
+    color: #19333a;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    border-right: 2px solid #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px #000000 solid;
+    animation: blink 1s step-end infinite;
+}
+.tab{
+    animation-duration: 1.5s;
+}
+
+@keyframes blink { 50% { border-color:#fff ; }  }
