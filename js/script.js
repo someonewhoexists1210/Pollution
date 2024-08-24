@@ -1,4 +1,9 @@
 var myIndex = 0;
+fetch('../nav.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('navigation').innerHTML = data;
+});
 
 function load(){
     document.querySelectorAll(".tablink").forEach(item => {
@@ -123,3 +128,6 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
 }
+
+
+window.addEventListener('resize', setEqualHeight);
