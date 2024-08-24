@@ -1,9 +1,4 @@
 var myIndex = 0;
-fetch('../nav.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('navigation').innerHTML = data;
-});
 
 function load(){
     document.querySelectorAll(".tablink").forEach(item => {

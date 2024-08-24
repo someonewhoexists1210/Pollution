@@ -11,7 +11,20 @@
         <script src="js/script.js"></script>
     </head>
     <body onload="load()" >
-        <div id="navigation" class="sticky"></div>
+        <div id="navigation" class="sticky">
+            <div class="w3-bar w3-black">
+                <a href="/index.html#home" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i></a>
+                <a href="/index.html#problemlink" class="w3-bar-item w3-button">The problem</a>
+                <div class="w3-dropdown-hover">
+                    <a class="w3-button" href="/index.html#cases">Case Studies</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                      <a href="pages/mexico.html" class="w3-bar-item w3-button w3-hover-red">Mexico City</a>
+                      <a href="pages/zurich.html" class="w3-bar-item w3-button w3-hover-green">Zürich</a>
+                    </div>
+                </div>
+                <a href="#solutions" class="w3-bar-item w3-button">What you can do</a>
+            </div>
+        </div>
 
         <section class="w3-content w3-center w3-display-container" style="max-width:100%" id="home">
             <div class="typing-container w3-display-middle">
@@ -28,11 +41,10 @@
                 <img src="images/home/image4.jpg" alt="Slide 2">
             </div>
         </section>
-        <br>
 
 
         <div id="problemlink"></div>
-        <section class="w3-container">
+        <section class="w3-container" id="p">
             <div class="w3-container w3-bottombar" style="text-align: center;">
                 <h2><b><i>The Problem of Pollution</i></b></h2>
                 <p style="width: 92%;" id="problempara">Pollution, by definition, is “the presence or introduction into the environment of a 
