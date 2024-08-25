@@ -2,12 +2,12 @@
     display: none;
 }
 .w3-display-container img {
-    width: 100%; /* Make sure the images take up the full width */
+    width: 100%;
 }
 .sticky {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it is on top of other content */
+    z-index: 1000; 
 }
 .typing-container {
     width: 50%;
@@ -45,7 +45,6 @@
     display:flexbox;
     justify-content: center;
     margin-top: 50px;
-    padding-bottom: 50px;
 }
 #left{left: -50px;}#right{right: -50px;}
 
@@ -57,6 +56,12 @@
     text-align: center;
 }
 
+
 img {
     width: 100%;
+}
+#problem {
+    color:#fff!important;
+    background: rgb(68,68,68)!important;
+    background: linear-gradient(90deg, rgba(68,68,68,1) 18%, rgba(71,14,2,1) 76%)!important;
 }
