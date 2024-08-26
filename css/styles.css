@@ -2,12 +2,12 @@
     display: none;
 }
 .w3-display-container img {
-    width: 100%; 
+    width: 100%; /* Make sure the images take up the full width */
 }
 .sticky {
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000; /* Ensure it is on top of other content */
 }
 .typing-container {
     width: 50%;
@@ -42,10 +42,9 @@
     z-index: 1;
 }
 
-.w3-card > header, .soli{
+.w3-card > header{
     text-align: center;
 }
-
 
 img {
     width: 100%;
@@ -56,108 +55,29 @@ img {
     background: linear-gradient(90deg, rgba(68,68,68,1) 18%, rgba(71,14,2,1) 76%)!important;
 }
 
-:root {
-	--cards: 7;
-	--cardHeight: 70vh;
-	--cardTopPadding: 1.5em;
-	--cardMargin: 4vw;
-    --topPadding: 10vh;
+.accordion {
+    display: flex;
+    width: 95vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
-.container {
-	width: 75%;
-	margin: 0 auto;
-}
-
-#cards {
-	list-style: none;
-	padding-left: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--cards), var(--cardHeight));
-	gap: var(--cardMargin);
-	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
-	margin-bottom: var(--cardMargin);
-}
-
-#card1 {
-	--index: 1;
-}
-#card2 {
-	--index: 2;
-}
-#card3 {
-	--index: 3;
-}
-#card4 {
-	--index: 4;
-}
-#card5 {
-	--index: 5;
-}#card6 {
-	--index: 6;
-}#card7 {
-	--index: 7;
-}
-
-.card {
-	position: sticky;
-	top: 0;
-	padding-top: calc(var(--index) * var(--cardTopPadding) + var(--topPadding));
-    font-size: 1em;
-}
-
-#card1 .card-body, #card6 .card-body{
-	background-color: #52B2CF;
-}
-#card2 .card-body, #card7 .card-body {
-	background-color: #E5A36F;
-}
-#card3 .card-body {
-	background-color: #9CADCE;
-}
-#card4 .card-body {
-	background-color: #D4AFB9;
-}
-#card5 .card-body {
-	background-color: #7EC4CF
-}
-
-.card-body {
-	box-sizing: border-box;
-	padding: 30px;
-	border-radius: 50px;
-	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
-	height: var(--cardHeight);
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	transition: all 0.5s;
-}
-
-h2 {
-	font-size: 2.5em;
-}
-.cardtitle {
-    border-bottom: #fff 2px solid;
-    text-align: center;
-}
-.text-container {
-    width: 50%;
-    padding-right: 15px; 
-    float: left;
-}
-
-.image-container {
-    width: 50%;
-    text-align: right;
-    float:right;
+.accordion-item {
+    flex: 1;
+    transition: flex 0.3s ease;
+    background-color: #ccc;
+    border-right: 1px solid #fff;
+    display: flex;
     justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.6;
+    background-size: cover; 
+    background-position: center;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
+.accordion-item:hover {
+    flex: 2;
 }

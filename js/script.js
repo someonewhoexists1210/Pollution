@@ -126,3 +126,13 @@ function showDivs(n) {
 
 
 window.addEventListener('resize', setEqualHeight);
+
+document.querySelectorAll('.accordion-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.accordion-item').forEach(i => i.style.flex = '1');
+        item.style.flex = '2';
+    });
+    item.addEventListener('mouseleave', () => {
+        document.querySelectorAll('.accordion-item').forEach(i => i.style.flex = '1');
+    });
+});
