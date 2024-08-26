@@ -56,28 +56,52 @@ img {
 }
 
 .accordion {
-    display: flex;
     width: 95vw;
     height: 70vh;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    display: flex;
+
 }
+
+
 
 .accordion-item {
     flex: 1;
     transition: flex 0.3s ease;
     background-color: #ccc;
     border-right: 1px solid #fff;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 2rem;
     cursor: pointer;
-    opacity: 0.6;
     background-size: cover; 
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+
 }
 
 .accordion-item:hover {
     flex: 2;
+}
+
+#zurich {
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.5), 
+    rgba(255,255,255,0.5)), url("../images/accordion/zurich.jpeg");
+}
+#mexico {
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.5), 
+    rgba(255,255,255,0.5)), url("../images/accordion/mexico.jpeg");
+}
+
+#zurichlink {
+    width: auto;margin: 0 auto;
+    ;
+}
+.spacer{
+    flex: 1;
 }
