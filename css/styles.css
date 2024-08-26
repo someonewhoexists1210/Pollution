@@ -2,12 +2,12 @@
     display: none;
 }
 .w3-display-container img {
-    width: 100%; /* Make sure the images take up the full width */
+    width: 100%; 
 }
 .sticky {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure it is on top of other content */
+    z-index: 1000; 
 }
 .typing-container {
     width: 50%;
@@ -61,6 +61,7 @@ img {
 	--cardHeight: 70vh;
 	--cardTopPadding: 1.5em;
 	--cardMargin: 4vw;
+    --topPadding: 10vh;
 }
 
 .container {
@@ -102,7 +103,7 @@ img {
 .card {
 	position: sticky;
 	top: 0;
-	padding-top: calc(var(--index) * var(--cardTopPadding));
+	padding-top: calc(var(--index) * var(--cardTopPadding) + var(--topPadding));
     font-size: 1em;
 }
 
@@ -110,7 +111,6 @@ img {
 	background-color: #52B2CF;
 }
 #card2 .card-body, #card7 .card-body {
-	/* background-color: #7EC4CF; */
 	background-color: #E5A36F;
 }
 #card3 .card-body {
@@ -146,18 +146,18 @@ h2 {
 }
 .text-container {
     width: 50%;
-    padding-right: 15px; /* Add some padding for spacing */
+    padding-right: 15px; 
     float: left;
 }
 
 .image-container {
     width: 50%;
-    text-align: right; /* Align the image to the right */
+    text-align: right;
     float:right;
     justify-content: center;
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure the image takes up the full width */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
