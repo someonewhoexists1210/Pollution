@@ -1,3 +1,7 @@
+Body {
+    background-color: #181d32;
+}
+
 .mySlides {
     display: none;
 }
@@ -55,6 +59,119 @@ img {
     background: linear-gradient(90deg, rgba(68,68,68,1) 18%, rgba(71,14,2,1) 76%)!important;
 }
 
+:root {
+	--cards: 7;
+	--cardHeight: 70vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+    --topPadding: 7vh;
+}
+
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+#card5 {
+	--index: 5;
+}#card6 {
+	--index: 6;
+}#card7 {
+	--index: 7;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding) + var(--topPadding));
+    font-size: 1em;
+}
+
+#card1 .card-body{
+	background-color: #add8e6;
+}
+#card2 .card-body{
+	background-color: #afeeee;
+}
+#card3 .card-body {
+	background-color: #90ee90;
+}
+#card4 .card-body {
+	background-color: #ffffe0;
+}
+#card5 .card-body {
+	background-color: #b0c4de
+}
+#card6 .card-body {
+    background-color: #ffa07a;
+
+}
+ #card7 .card-body {
+    background-color: #ffb6c1;
+
+}
+
+.card-body {
+	box-sizing: border-box;
+	padding: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	height: var(--cardHeight);
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+.cardtitle {
+    border-bottom: #fff 2px solid;
+    text-align: center;
+}
+.text-container {
+    width: 50%;
+    padding-right: 15px; /* Add some padding for spacing */
+    float: left;
+}
+
+.image-container {
+    width: 50%;
+    text-align: right; /* Align the image to the right */
+    float:right;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image takes up the full width */
+    height: auto; /* Maintain the aspect ratio */
+}
 .accordion {
     width: 95vw;
     height: 70vh;
@@ -62,7 +179,8 @@ img {
     position: relative;
     margin: 0 auto;
     display: flex;
-
+    margin-top: 50px;
+    box-shadow: #fff 0px 0px 20px;
 }
 
 
@@ -70,7 +188,6 @@ img {
 .accordion-item {
     flex: 1;
     transition: flex 0.3s ease;
-    background-color: #ccc;
     border-right: 1px solid #fff;
     text-align: center;
     font-size: 2rem;
@@ -79,8 +196,6 @@ img {
     background-position: center;
     display: flex;
     flex-direction: column;
-    
-
 }
 
 .accordion-item:hover {
@@ -100,8 +215,20 @@ img {
 
 #zurichlink {
     width: auto;margin: 0 auto;
-    ;
 }
 .spacer{
     flex: 1;
+}
+#solutions {
+    margin-top: 7vh;
+    border-top: white 2px solid;
+}
+
+#help {
+    text-align: center; 
+    color:white;
+}
+
+#cases {
+    margin-bottom: 10vh;
 }
